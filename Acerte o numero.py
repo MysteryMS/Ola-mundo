@@ -1,4 +1,4 @@
-#Esse seria o Beta, ainda ta em processo de desenvolvimento
+#Esse é o Beta, ainda ta em processo de desenvolvimento
 import random
 
 resu = random.randint (1, 10)
