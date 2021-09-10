@@ -31,7 +31,7 @@ if duvidas == "S":
     print ('''-----------------------------------------------------------------------------------------------------
 O jogo funciona assim:
 
-Você irá tentar acertar o número que o computador estiver pensando, ele vai mudar toda vez o núemero.
+Você ira tentar acertar o número que o computador estiver pensando, ele vai mudar toda vez o número.
 -----------------------------------------------------------------------------------------------------''')
 
 
