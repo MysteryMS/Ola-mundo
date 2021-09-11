@@ -18,21 +18,31 @@ Nivel 1= {}x
 Nivel 2= {}x
 Nivel 3= {}x""".format (record1, record2, record3))
 print ("--"*9)
+
 duvidas = input('Você quer entender como funciona? [S/N]: ').upper ()
 escolha = int(input('Digite um número para escolher a difículdade [1/2/3]: '))
 
+while duvidas != 'S'or'N' and 'SIM' and 'NAO' or 'NÃO':
+    print ('--'*9)
+    print ('Erro, digite novamente')
+    duvidas = input('Você quer entender como funciona? [S/N]: ').upper ()
+    if duvidas == 'S'or'N' and 'SIM' and 'NAO' or 'NÃO':
+        break
+
 while escolha > 3:
+    print ('--'*9)
     print ('Erro tente novamente')
     escolha = int(input('Digite um número para escolher a difículdade [1/2/3]: '))
     if escolha <= 3:
         break
 
-if duvidas == "S":
-    print ('''-----------------------------------------------------------------------------------------------------
-O jogo funciona assim:
-
-Você ira tentar acertar o número que o computador estiver pensando, ele vai mudar toda vez o número.
------------------------------------------------------------------------------------------------------''')
+if duvidas == 'S' or 'SIM':
+    print ('''---------------------------------------------------------------------------------------------------------
+                        O jogo funciona assim:
+* Você ira tentar acertar o número que o computador estiver pensando, ele vai mudar toda vez o número;
+* Enquanto você errar ele não vai parar de rodar, a menos que ele atinja o seu limite de tentativas;
+OBS: Toda vez que você erra ele muda de número;
+---------------------------------------------------------------------------------------------------------''')
 
 
 if escolha == 3: 
@@ -67,7 +77,7 @@ elif escolha == 1:
 
 
 print ('--'*4)
-print ('Acabou')
+print ('Acabou o jogo')
 print ('Você tentou: {}x'.format (tentativas))
 
 if resu == resposta:
