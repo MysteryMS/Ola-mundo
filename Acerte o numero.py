@@ -12,7 +12,7 @@ TentarNovamente = 'S'
 def como_jogar():
     resposta = input(
         'Você quer entender como funciona o jogo? [S/N]: ').lower()
-    if resposta == 's' or 'n':
+    if resposta == 's' or resposta == 'n':
         return resposta
     else:
         print('--'*9)
@@ -22,7 +22,7 @@ def como_jogar():
 
 def dificuldade():
     difi = int(input('Digite um número para escolher a difículdade [1/2/3]: '))
-    if difi == 1 or 2 or 3:
+    if difi == 1 or difi == 2 or difi == 3:
         return difi
     else:
         print('--'*9)
